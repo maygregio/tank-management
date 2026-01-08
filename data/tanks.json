@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tank-001",
+    "name": "Tank Alpha",
+    "product": "Carbon Black Oil",
+    "location": "North Terminal",
+    "currentVolume": 125.5,
+    "properties": [
+      { "propertyId": "prop-001", "value": 12.5 },
+      { "propertyId": "prop-002", "value": 3.2 },
+      { "propertyId": "prop-003", "value": 450.0 },
+      { "propertyId": "prop-004", "value": 0.8 },
+      { "propertyId": "prop-005", "value": 0.05 }
+    ],
+    "createdAt": "2025-01-01T08:00:00.000Z",
+    "updatedAt": "2025-01-05T14:30:00.000Z"
+  },
+  {
+    "id": "tank-002",
+    "name": "Tank Beta",
+    "product": "Carbon Black Oil",
+    "location": "North Terminal",
+    "currentVolume": 89.3,
+    "properties": [
+      { "propertyId": "prop-001", "value": 11.8 },
+      { "propertyId": "prop-002", "value": 3.5 },
+      { "propertyId": "prop-003", "value": 520.0 },
+      { "propertyId": "prop-004", "value": 1.1 },
+      { "propertyId": "prop-005", "value": 0.04 }
+    ],
+    "createdAt": "2025-01-01T08:00:00.000Z",
+    "updatedAt": "2025-01-04T10:15:00.000Z"
+  },
+  {
+    "id": "tank-003",
+    "name": "Tank Gamma",
+    "product": "Carbon Black Oil",
+    "location": "South Terminal",
+    "currentVolume": 210.0,
+    "properties": [
+      { "propertyId": "prop-001", "value": 13.2 },
+      { "propertyId": "prop-002", "value": 2.9 },
+      { "propertyId": "prop-003", "value": 380.0 },
+      { "propertyId": "prop-004", "value": 0.5 },
+      { "propertyId": "prop-005", "value": 0.03 }
+    ],
+    "createdAt": "2025-01-02T09:00:00.000Z",
+    "updatedAt": "2025-01-06T16:45:00.000Z"
+  },
+  {
+    "id": "tank-004",
+    "name": "Tank Delta",
+    "product": "Carbon Black Oil",
+    "location": "South Terminal",
+    "currentVolume": 45.8,
+    "properties": [
+      { "propertyId": "prop-001", "value": 10.5 },
+      { "propertyId": "prop-002", "value": 4.1 },
+      { "propertyId": "prop-003", "value": 620.0 },
+      { "propertyId": "prop-004", "value": 1.5 },
+      { "propertyId": "prop-005", "value": 0.07 }
+    ],
+    "createdAt": "2025-01-02T09:00:00.000Z",
+    "updatedAt": "2025-01-03T11:20:00.000Z"
+  },
+  {
+    "id": "tank-005",
+    "name": "Tank Epsilon",
+    "product": "Carbon Black Oil",
+    "location": "East Terminal",
+    "currentVolume": 178.2,
+    "properties": [
+      { "propertyId": "prop-001", "value": 12.0 },
+      { "propertyId": "prop-002", "value": 3.0 },
+      { "propertyId": "prop-003", "value": 410.0 },
+      { "propertyId": "prop-004", "value": 0.7 },
+      { "propertyId": "prop-005", "value": 0.04 }
+    ],
+    "createdAt": "2025-01-03T10:00:00.000Z",
+    "updatedAt": "2025-01-07T09:00:00.000Z"
+  }
+]

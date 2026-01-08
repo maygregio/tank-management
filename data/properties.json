@@ -1,0 +1,32 @@
+[
+  {
+    "id": "prop-001",
+    "name": "API Gravity",
+    "unit": "API",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prop-002",
+    "name": "Sulfur Content",
+    "unit": "%",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prop-003",
+    "name": "Viscosity",
+    "unit": "cSt",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prop-004",
+    "name": "Water Content",
+    "unit": "%",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prop-005",
+    "name": "Ash Content",
+    "unit": "%",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]

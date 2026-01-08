@@ -1,0 +1,192 @@
+[
+  {
+    "id": "audit-001",
+    "action": "create",
+    "entityType": "tank",
+    "entityId": "tank-001",
+    "userId": "user-001",
+    "timestamp": "2025-01-01T08:00:00.000Z",
+    "changes": {
+      "old": null,
+      "new": {
+        "id": "tank-001",
+        "name": "Tank Alpha",
+        "product": "Carbon Black Oil",
+        "location": "North Terminal",
+        "currentVolume": 100.0
+      }
+    },
+    "description": "Created new tank"
+  },
+  {
+    "id": "audit-002",
+    "action": "create",
+    "entityType": "tank",
+    "entityId": "tank-002",
+    "userId": "user-001",
+    "timestamp": "2025-01-01T08:15:00.000Z",
+    "changes": {
+      "old": null,
+      "new": {
+        "id": "tank-002",
+        "name": "Tank Beta",
+        "product": "Carbon Black Oil",
+        "location": "North Terminal",
+        "currentVolume": 80.0
+      }
+    },
+    "description": "Created new tank"
+  },
+  {
+    "id": "audit-003",
+    "action": "create",
+    "entityType": "movement",
+    "entityId": "mov-001",
+    "userId": "user-001",
+    "timestamp": "2025-01-02T14:00:00.000Z",
+    "changes": {
+      "old": null,
+      "new": {
+        "id": "mov-001",
+        "type": "receive",
+        "status": "scheduled",
+        "destinationTankId": "tank-001",
+        "expectedVolume": 50.0
+      }
+    },
+    "description": "Created scheduled receive movement"
+  },
+  {
+    "id": "audit-004",
+    "action": "update",
+    "entityType": "movement",
+    "entityId": "mov-001",
+    "userId": "user-002",
+    "timestamp": "2025-01-03T10:30:00.000Z",
+    "changes": {
+      "old": {
+        "status": "scheduled",
+        "actualVolume": null
+      },
+      "new": {
+        "status": "completed",
+        "actualVolume": 48.5
+      }
+    },
+    "description": "Completed receive movement"
+  },
+  {
+    "id": "audit-005",
+    "action": "update",
+    "entityType": "tank",
+    "entityId": "tank-001",
+    "userId": "user-002",
+    "timestamp": "2025-01-03T10:30:00.000Z",
+    "changes": {
+      "old": {
+        "currentVolume": 100.0
+      },
+      "new": {
+        "currentVolume": 148.5
+      }
+    },
+    "description": "Tank volume updated from completed movement"
+  },
+  {
+    "id": "audit-006",
+    "action": "create",
+    "entityType": "movement",
+    "entityId": "mov-002",
+    "userId": "user-002",
+    "timestamp": "2025-01-04T08:00:00.000Z",
+    "changes": {
+      "old": null,
+      "new": {
+        "id": "mov-002",
+        "type": "transfer",
+        "status": "scheduled",
+        "sourceTankId": "tank-003",
+        "destinationTankId": "tank-002",
+        "expectedVolume": 25.0
+      }
+    },
+    "description": "Created scheduled transfer movement"
+  },
+  {
+    "id": "audit-007",
+    "action": "update",
+    "entityType": "movement",
+    "entityId": "mov-002",
+    "userId": "user-001",
+    "timestamp": "2025-01-04T14:15:00.000Z",
+    "changes": {
+      "old": {
+        "status": "scheduled"
+      },
+      "new": {
+        "status": "completed"
+      }
+    },
+    "description": "Completed transfer movement"
+  },
+  {
+    "id": "audit-008",
+    "action": "create",
+    "entityType": "movement",
+    "entityId": "mov-003",
+    "userId": "user-001",
+    "timestamp": "2025-01-04T16:00:00.000Z",
+    "changes": {
+      "old": null,
+      "new": {
+        "id": "mov-003",
+        "type": "ship",
+        "status": "scheduled",
+        "sourceTankId": "tank-003",
+        "expectedVolume": 75.0
+      }
+    },
+    "description": "Created scheduled ship movement"
+  },
+  {
+    "id": "audit-009",
+    "action": "update",
+    "entityType": "movement",
+    "entityId": "mov-003",
+    "userId": "user-002",
+    "timestamp": "2025-01-05T09:30:00.000Z",
+    "changes": {
+      "old": {
+        "status": "scheduled",
+        "actualVolume": null
+      },
+      "new": {
+        "status": "completed",
+        "actualVolume": 74.2
+      }
+    },
+    "description": "Completed ship movement"
+  },
+  {
+    "id": "audit-010",
+    "action": "reset",
+    "entityType": "tank",
+    "entityId": "tank-005",
+    "userId": "user-001",
+    "timestamp": "2025-01-07T09:00:00.000Z",
+    "changes": {
+      "old": {
+        "currentVolume": 170.0,
+        "properties": []
+      },
+      "new": {
+        "currentVolume": 178.2,
+        "properties": [
+          { "propertyId": "prop-001", "value": 12.0 },
+          { "propertyId": "prop-002", "value": 3.0 }
+        ]
+      }
+    },
+    "description": "Reset tank values from lab measurement"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "user-001",
+    "name": "John Smith"
+  },
+  {
+    "id": "user-002",
+    "name": "Maria Garcia"
+  },
+  {
+    "id": "user-003",
+    "name": "James Wilson"
+  },
+  {
+    "id": "user-004",
+    "name": "Sarah Chen"
+  }
+]
